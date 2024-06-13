@@ -9,7 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 # Load environment variables from .env file
-dotenv_path = 'c:/Users/ACER/Documents/Internships/2.Notion Press/Web Scraping/linkedin1/linkedin_scraper/samples/l.env'
+dotenv_path = ''
 load_dotenv(dotenv_path)
 
 email = os.getenv("LINKEDIN_USER")
@@ -23,7 +23,7 @@ print(f"Password: {password}")
 if not email or not password:
     raise ValueError("Email or password environment variables not found. Please check your l.env file.")
 
-chrome_driver_path = "C:/Users/ACER/Downloads/chromedriver.exe"
+chrome_driver_path = ""
 service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 

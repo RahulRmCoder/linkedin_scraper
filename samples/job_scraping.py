@@ -7,8 +7,8 @@ def scrape_jobs_from_url(url):
     driver = webdriver.Chrome("C:/Users/ACER/Downloads/chromedriver.exe")
 
     # Email and password for logging in
-    email = "rrm07msd@gmail.com"
-    password = "RRM@12345"
+    email = "youremail@gmail.com"
+    password = "yourpassword"
 
     # Login to LinkedIn
     actions.login(driver, email, password)  # if email and password isn't given, it'll prompt in terminal

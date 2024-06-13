@@ -2,8 +2,8 @@ from linkedin_scraper import JobSearch, actions
 from selenium import webdriver
 
 driver = webdriver.Chrome("C:/Users/ACER/Downloads/chromedriver.exe")
-email = "rrm07msd@gmail.com"
-password = "RRM@12345"
+email = "youremail@gmail.com"
+password = "yourpassword"
 actions.login(driver, email, password) # if email and password isnt given, it'll prompt in terminal
 input("Press Enter")
 job_search = JobSearch(driver=driver, close_on_complete=False, scrape=False)
